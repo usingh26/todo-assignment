@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Top section */
+header {
+    text-align: center;
+    padding: 40px 20px 30px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+/* Input */
+#new-todo-input {
+    width: 400px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+}
+
+#new-todo-input {
+    border-color: #777;
+}
+
+/* Add button */
+#submit-btn {
+    padding: 12px 20px;
+    margin-left: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    /* it will change cursor pointer as hand icon when hover */
+    cursor: pointer;  
+    background-color: #4CAF50;
+}
+
+/* Error message */
+#error-message {
+    display: block;
+    margin-top: 6px;
+    color: red;
+    font-size: 14px;
+}
+
+/* Main Todo area */
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+#todo-section {
+    background: white;
+    min-height: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+#empty-message {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+/* Remove default bullet points */
+#todo-list {
+    list-style: none;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #f5f5f5;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+
+    border-radius: 6px;
+}
+
+/* Task text */
+#todo-list li span {
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Status button */
+#todo-list li button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #946ad8;
+}
+
+/* Delete button */
+#todo-list li button:last-child {
+    background-color: rgb(173, 77, 77);
+}
